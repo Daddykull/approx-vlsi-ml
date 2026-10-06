@@ -1,0 +1,24 @@
+{
+    "adder": {
+        "width": 16,
+        "approx_bits": [0, 2, 4, 6, 8],
+        "carry_truncation": [0, 2, 4, 6, 8],
+        "correction_depth": [0, 1, 2, 4]
+    },
+
+    "simulation": {
+        "num_vectors": 10000,
+        "seed": 42
+    },
+
+    "optimization": {
+        "population_size": 40,
+        "generations": 50
+    },
+
+    "paths": {
+        "rtl": "rtl",
+        "datasets": "datasets",
+        "results": "results"
+    }
+}

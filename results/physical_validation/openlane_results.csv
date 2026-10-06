@@ -1,0 +1,2 @@
+design_name,synth_cell_count,total_cells,core_area_um2,die_area_mm2,critical_path_ns,wire_length,vias,drc_violations,lvs_errors,flow_status
+approx_adder_w16_k0_t0_c0,93,336,1961.8816,0.0037522905,7.55,2409,797,0,0,completed

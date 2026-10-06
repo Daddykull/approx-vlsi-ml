@@ -1,0 +1,154 @@
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.69+152 (git sha1 6f876ae0e-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+
+-- Running command `
+read_verilog "C:/Users/Mahadeo Manjarekar/Documents/approx-vlsi-ml/rtl/approx_adder_w16_k6_t6_c1.v"
+hierarchy -top approx_adder_w16_k6_t6_c1
+proc
+opt
+check
+stat
+' --
+
+1. Executing Verilog-2005 frontend: C:/Users/Mahadeo Manjarekar/Documents/approx-vlsi-ml/rtl/approx_adder_w16_k6_t6_c1.v
+Parsing Verilog input from `C:/Users/Mahadeo Manjarekar/Documents/approx-vlsi-ml/rtl/approx_adder_w16_k6_t6_c1.v' to AST representation.
+Generating RTLIL representation for module `\approx_adder_w16_k6_t6_c1'.
+Successfully finished Verilog frontend.
+
+2. Executing HIERARCHY pass (managing design hierarchy).
+
+2.1. Analyzing design hierarchy..
+Top module:  \approx_adder_w16_k6_t6_c1
+
+2.2. Analyzing design hierarchy..
+Top module:  \approx_adder_w16_k6_t6_c1
+Removed 0 unused modules.
+
+3. Executing PROC pass (convert processes to netlists).
+
+3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+3.4. Executing PROC_INIT pass (extract init attributes).
+
+3.5. Executing PROC_ARST pass (detect async resets in processes).
+
+3.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+3.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+3.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+3.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+3.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+3.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+3.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module approx_adder_w16_k6_t6_c1.
+<suppressed ~5 debug messages>
+
+4. Executing OPT pass (performing simple optimizations).
+
+4.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module approx_adder_w16_k6_t6_c1.
+
+4.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\approx_adder_w16_k6_t6_c1'.
+Computing hashes of 77 cells of `\approx_adder_w16_k6_t6_c1'.
+Finding duplicate cells in `\approx_adder_w16_k6_t6_c1'.
+Removed a total of 0 cells.
+
+4.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \approx_adder_w16_k6_t6_c1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+4.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \approx_adder_w16_k6_t6_c1.
+Performed a total of 0 changes.
+
+4.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\approx_adder_w16_k6_t6_c1'.
+Computing hashes of 77 cells of `\approx_adder_w16_k6_t6_c1'.
+Finding duplicate cells in `\approx_adder_w16_k6_t6_c1'.
+Removed a total of 0 cells.
+
+4.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \approx_adder_w16_k6_t6_c1..
+Removed 5 unused cells and 36 unused wires.
+<suppressed ~6 debug messages>
+
+4.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module approx_adder_w16_k6_t6_c1.
+
+4.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+4.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \approx_adder_w16_k6_t6_c1..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+4.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \approx_adder_w16_k6_t6_c1.
+Performed a total of 0 changes.
+
+4.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\approx_adder_w16_k6_t6_c1'.
+Computing hashes of 72 cells of `\approx_adder_w16_k6_t6_c1'.
+Finding duplicate cells in `\approx_adder_w16_k6_t6_c1'.
+Removed a total of 0 cells.
+
+4.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+4.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \approx_adder_w16_k6_t6_c1..
+
+4.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module approx_adder_w16_k6_t6_c1.
+
+4.16. Finished fast OPT passes. (There is nothing left to do.)
+
+5. Executing CHECK pass (checking for obvious problems).
+Checking module approx_adder_w16_k6_t6_c1...
+Found and reported 0 problems.
+
+6. Printing statistics.
+
+=== approx_adder_w16_k6_t6_c1 ===
+
+        +----------Local Count, excluding submodules.
+        | 
+       52 wires
+      113 wire bits
+        6 public wires
+       67 public wire bits
+        5 ports
+       50 port bits
+       72 cells
+       28   $and
+       18   $or
+       26   $xor
+
+End of script. Logfile hash: 2a46c2578f
+Yosys 0.69+152 (git sha1 6f876ae0e-dirty, Release, GNU /usr/bin/x86_64-w64-mingw32-g++ 15.2.1)
+Time spent: 4% 4x opt_expr (0 sec), 4% 3x opt_merge (0 sec), ...

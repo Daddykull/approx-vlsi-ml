@@ -1,0 +1,4 @@
+objective,design,error_rate,baseline_value,optimized_value,improvement_percent
+Minimum Area,k8_t8_c0,0.996,1961.8816,1252.4512,36.160714285714285
+Minimum Delay,k8_t8_c0,0.996,7.55,1.88,75.09933774834437
+Minimum Power,k8_t8_c0,0.996,0.000131800697,4.7000468e-05,64.33974245219659
